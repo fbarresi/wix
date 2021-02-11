@@ -56,7 +56,7 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
         asset_path: bin\Installer.msi
-        asset_name: Installer_v0.1.${{ github.run_number }}.msi
+        asset_name: Installer_v1.0.${{ github.run_number }}.msi
         asset_content_type: application/x-msi
 
 ```

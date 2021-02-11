@@ -34,8 +34,6 @@ jobs:
       run: dotnet build --configuration Release --no-restore
     - name: Test
       run: dotnet test --no-restore --verbosity normal
-    - name: Publish
-      run: dotnet publish VersionCats\VersionCats.csproj -r win7-x64 -c Release /p:PublishSingleFile=true -o out
     - name: Build Setup
       run: |
         wix\tools\candle.exe Product.wxs -o obj\ -ext WixUtilExtension -ext WixUIExtension
